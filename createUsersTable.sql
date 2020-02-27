@@ -1,11 +1,9 @@
-use wp_eatery;
-CREATE TABLE adminusers(
-	AdminID int not null AUTO_INCREMENT,
-	Username VARCHAR(50),
-	Password VARCHAR(50),
-        Lastlogin DATE,
-	PRIMARY KEY (AdminID)
+CREATE TABLE users(
+	_id int not null AUTO_INCREMENT,
+	username VARCHAR(50) NOT NULL,
+	password VARCHAR(15) NOT NULL,
+	PRIMARY KEY (_id)
 	);
 
-INSERT INTO adminusers (Username,Password)
-   VALUES ('admin','passme');
+INSERT INTO users (username,password)
+   VALUES ('testuser','passit');
