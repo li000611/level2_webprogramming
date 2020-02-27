@@ -1,0 +1,10 @@
+CREATE TABLE adminusers(
+	AdminID int not null AUTO_INCREMENT,
+	Username VARCHAR(50) NOT NULL,
+	Password VARCHAR(50) NOT NULL,
+        Lastlogin DATE,
+	PRIMARY KEY (adminID)
+	);
+
+INSERT INTO adminusers (Username,Password)
+   VALUES ('admin','passme');
